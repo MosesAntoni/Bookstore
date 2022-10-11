@@ -1,0 +1,36 @@
+
+
+
+<div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Image</th>
+            <th>Available / Not Available</th>
+        
+        </tr>
+             
+        
+        <tr *ngFor="let each of books let i = index">
+           
+           
+            <td>{{each.name}}</td>
+            <td>{{each.author}}</td>
+            <td><img src="{{each.image}}" height="60px"></td>
+            <!-- <td><a href="#">{{match=='!Available.outOfproduct' ? 'Not Available': 'Available'}} </a></td>
+              -->
+             <td> <a routerLink="display" (click)="getAvailability(i)"*ngIf="match=='Available';else not"><p>{{each.Availablity}}</p> </a></td>
+             <ng-template #not >not Available</ng-template>  
+             </tr>
+
+
+             <app-new-book></app-new-book>
+    
+              
+            
+    </table>
+    
+
+</div>
+

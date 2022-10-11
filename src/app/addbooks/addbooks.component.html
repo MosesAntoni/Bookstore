@@ -1,0 +1,85 @@
+
+
+<table>
+    <tr>
+        <td>
+            <div> 
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" #name><br>
+                
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" #author><br>
+                
+               <div >
+                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  
+                  
+                    <input type="teext"  #image (input)="onView($event)">  
+
+                    <br><br>
+               <!-- <p>PreView image: <img src="{{Image}}" alt="" height="80px"> </p> -->
+                </label>
+               </div>
+
+
+                <!-- <div ><a routerLink="/displaybook">Preview</a></div> -->
+
+                <!-- <button class="btn btn-warning" [disabled]="" (click)="changeUserCreatedStatus()">Preview</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+               <div>
+                 
+                <button (click)="onSave(name,author,image)" (click)="onBooksAddedClick()" (click)="onSaveApi()">Save</button>
+                <br><br>
+<!-- <div *ngIf="booksAdded">
+           This Book is Adding
+           </div> -->
+
+           <div>
+            <!-- <button type="button" (click)="onBooksAddedClick()"></button> -->
+           </div>
+               </div>
+                <div>
+                    preview :<app-preview img ="{{image.value}}"></app-preview>
+                </div>
+               
+  
+               <app-new-book></app-new-book>
+    
+          </div>
+           
+
+        </td>
+    </tr>
+</table>
+
+
+<!-- <br><br>
+<div *ngFor="let subject of previewChild">
+   
+   <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       <input type="text" #image >
+
+       <p >PreView image: <img src="{{subject.image}}" alt="Books" height="80px"/> </p>
+
+             
+   </label>
+</div>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <p>Name:{{name}}</p>
+    <p>Author:{{author}}</p>
+    <img [src]="image" alt="book">
+</div> --> 

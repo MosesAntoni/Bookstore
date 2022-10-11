@@ -1,0 +1,73 @@
+
+
+
+<main role="main" class="container mt-5">
+    <div class="container">
+      <div class="text-center mt-5">
+        <h3>Dashboard page</h3>
+        
+        <p class="text-bold " [innerText]="'Hi '+this.user.displayName+', your Firebase ID is '+this.user.localId" ></p>
+      </div>
+    </div>
+  </main>
+
+<!-- <table>
+    <tr>
+        <th>
+            <nav>
+                 <div (click)="onNavigate('add')">Add Books</div>   
+            </nav>
+        </th>
+
+        <th>
+            <nav>
+                <div (click)="onNavigate('display')">Display Books</div>   
+            </nav>
+        </th>
+    </tr>
+<div>
+
+
+<div class="navbar">
+   
+    
+    
+    </div>
+    <app-addbooks *ngIf="pageSelected=='add'"></app-addbooks>
+    <app-displaybooks *ngIf="pageSelected=='display'"></app-displaybooks>
+
+
+ -->
+ <table>
+    <tr>
+        <th>
+            <nav>
+                
+                <a (click)="onNavigate('add')" routerLink="{{value}}" >AddBooks</a>
+                   
+               </nav>
+        </th>
+        <th>
+            <nav>
+                <a (click)="onNavigate('display')">Display Books</a>
+            </nav>
+
+        </th>
+        <th>
+            <nav>
+                <a (click)="onNavigate('catalogue')"> CATALOGUE</a>
+            </nav>
+        </th>
+
+ <!-- <nav class="navbar navbar-invere">
+    <ul nav navbar-nav>
+        <li><a (click)="onNavigate('add')" routerLink="{{value}}" >AddBooks</a></li>
+        <li><a (click)="onNavigate('display')">Display Books</a></li>
+    </ul>
+ </nav> -->
+       
+
+   
+       
+
+

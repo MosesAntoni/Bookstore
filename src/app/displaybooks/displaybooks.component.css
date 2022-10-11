@@ -1,0 +1,28 @@
+table{
+    width: 80%;
+    justify-content: center;
+    table-layout:fixed;
+    text-align: center;
+    font-size: 15px;
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: Elaphant;
+    margin-left:auto;margin-right:auto;
+}
+th{
+    border-collapse: collapse;
+    table-layout:fixed;
+    text-align: center;
+    border: 2px solid black;
+}
+tr,th,td{
+    
+    width: fit-content;
+    padding: 10px;
+    justify-content: center
+    
+}
+td{
+    margin-left:auto;margin-right:auto;   
+    border-collapse: collapse;
+} 

@@ -1,0 +1,40 @@
+
+    
+    <table>
+        <tr>
+            <td>
+                <input type="text" placeholder="ponniyin selvan" name="" #name >
+                <button (click)="myFun(name)" >Search</button>
+                
+         <div>Author Name: {{authorname}}</div><hr>
+                <div>producer Name: {{producer}}</div><hr>
+                <div>Description:{{description}}</div><hr>
+                <div> <img src="{{bookImage}}" alt=""></div> <br>
+                
+             </td><hr>
+        </tr>
+     </table> 
+
+
+   
+     <!-- <table border="1">
+        <tr>
+            <td>Info</td>
+            <td>Book Image</td>
+        </tr>
+        
+        
+            <tr>
+                <td>
+                    <div *ngFor="let items of arrayy">
+                       
+                       {{items.kind}}
+                       {{items.authors}}
+                       {{items.title}}
+                       {{items.publisher}}
+                       {{items.publishedDate}}
+                       {{items.description}}
+                   </div>
+                   </td>
+            </tr>
+        </table>  -->
